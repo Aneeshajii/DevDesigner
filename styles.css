@@ -532,6 +532,10 @@ button, .btn-primary, .btn-secondary, .btn-outline {
         gap: 24px;
     }
     
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .grid-large {
         grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     }
