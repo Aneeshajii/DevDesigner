@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .qr-hero-img-container {
+            height: 300px;
+        }
+        @media (min-width: 900px) {
+            .qr-hero-img-container {
+                height: 500px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -30,7 +40,7 @@
     </nav>
 
     <!-- Project Hero Section -->
-    <header class="section" style="padding-top: 140px; padding-bottom: 60px; text-align: center;">
+    <header class="section" style="padding-top: 100px; padding-bottom: 30px; text-align: center;">
         <div class="container">
             <div class="badge">Web Application</div>
             <h1 style="margin-top: 24px; margin-bottom: 16px;">Hotel QR Code <br/><span class="highlight">Menu System</span></h1>
@@ -42,7 +52,7 @@
     <section class="section" style="padding-top: 0;">
         <div class="container" style="max-width: 900px;">
             <!-- Hero Image -->
-            <div style="border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #111; margin-bottom: 40px; height: 500px;">
+            <div class="qr-hero-img-container" style="border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #111; margin-bottom: 24px;">
                 <img src="qr_menu.png" alt="Hotel QR Code Menu" style="width: 100%; height: 100%; object-fit: contain; object-position: center; padding: 0;">
             </div>
 
@@ -72,10 +82,10 @@
         <div class="container" style="max-width: 600px;">
             <h2 style="margin-bottom: 32px;">View Live Project</h2>
             <div style="display: flex; flex-direction: column; gap: 24px; align-items: center;">
-                <a href="https://zenmenu.vercel.app/" target="_blank" class="btn-primary w-100" style="padding: 16px; font-size: 1.1rem; text-decoration: none; text-align: center; border-radius: var(--radius);">Live Menu Demo</a>
+                <a href="https://zenmenu.vercel.app/" target="_blank" class="btn-primary w-100" style="padding: 16px; font-size: 1.1rem; text-decoration: none; text-align: center; border-radius: var(--radius);">Live Menu Page</a>
                 
                 <div style="width: 100%;">
-                    <a href="https://zenmenu-admin.vercel.app/admin" target="_blank" class="btn-outline w-100" style="padding: 16px; font-size: 1.1rem; text-decoration: none; text-align: center; border-radius: var(--radius); display: block;">Live Admin Dashboard</a>
+                    <a href="https://zenmenu-admin.vercel.app/admin" target="_blank" class="btn-outline w-100" style="padding: 16px; font-size: 1.1rem; text-decoration: none; text-align: center; border-radius: var(--radius); display: block;">Live Admin Page</a>
                     <div style="margin-top: 12px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: rgba(255, 255, 255, 0.05); font-size: 0.95rem; color: var(--text-secondary);">
                         <strong style="color: var(--text);">Admin Login Credentials:</strong><br/>
                         ID: <span style="color: var(--primary);">admin</span> | Password: <span style="color: var(--primary);">admin123</span>
